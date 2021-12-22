@@ -1,0 +1,15 @@
+version: '2.3'
+
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      args:
+        API_URL: http://localhost:3100
+    restart: "no"
+    ports:
+      - "80:80"
+    environment:
+      NODE_ENV: production
+

@@ -1,0 +1,60 @@
+.navbar.navbar-light {
+  background-color: $primary;
+  color: $white;
+  box-shadow: $box-shadow-sm;
+
+  .navbar-toggler {
+    color: inherit;
+  }
+
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: inherit;
+
+    &.active {
+      color: $gray-900;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  border-top: 1px solid $card-border-color;
+  box-shadow: $box-shadow-sm;
+  font-size: 20px;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 999;
+}
+
+// Shopping list card on browse view
+.shopping-list.card {
+  box-shadow: $box-shadow-sm;
+  transition: box-shadow 0.25s ease-in;
+
+  .btn,
+  .btn:focus {
+    box-shadow: none;
+    color: $gray-600;
+  }
+
+  // Adjust padding of list items inside the card
+  .list-group > .list-group-item {
+    padding: $list-group-item-padding-y $card-spacer-x;
+  }
+}
+
+// Remove borders from list items
+.list-group {
+  &,
+  > .list-group-item {
+    border: none;
+  }
+}

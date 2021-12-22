@@ -1,0 +1,6 @@
+.hide-caret {
+  &::before,
+  &::after {
+    display: none;
+  }
+}

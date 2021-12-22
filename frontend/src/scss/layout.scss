@@ -1,0 +1,29 @@
+body.vertical-center .container {
+  // Extract navbar height from full height of
+  // browser window
+  height: calc(100% - 56px);
+  align-items: center;
+  display: flex;
+}
+
+.content-container {
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+
+  // Remove padding on mobile
+  @include media-breakpoint-down(md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.content-container-sm {
+  @extend .content-container;
+  max-width: 330px;
+}
+
+.content-container-md {
+  @extend .content-container;
+  max-width: 570px;
+}

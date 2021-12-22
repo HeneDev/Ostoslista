@@ -1,0 +1,13 @@
+// Import variables which override Bootstrap's default values
+@import './variables';
+
+// Import needed bootstrap components
+@import './bootstrap';
+
+@import './utils';
+@import './layout';
+@import './general';
+
+html, body, #root {
+  height: 100%;
+}

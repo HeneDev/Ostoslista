@@ -1,0 +1,43 @@
+// Override Bootstrap 5 variables
+// Full list of variables: https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
+// Variables are also visible in documentation
+
+@import '~bootstrap/scss/functions';
+
+// Colors
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+$white: #fff;
+
+$primary: #689f38;
+$secondary: #99d066;
+
+// Options
+$enable-shadows: true;
+$enable-validation-icons: false;
+$enable-smooth-scroll: false;
+
+// Navbar
+$navbar-light-toggler-border-color: transparent;
+$navbar-toggler-padding-x: 0.5rem;
+
+// Buttons
+$input-btn-focus-width: 0;
+$input-btn-focus-box-shadow: null;
+$btn-box-shadow: 0 1px 1px rgba(#000, .075);
+
+// Cards
+$card-spacer-x: 0.75rem;
+$card-spacer-y: 0.75rem;
+$card-cap-bg: #fff;
+
+// Import default Bootstrap variables
+@import '~bootstrap/scss/variables';
